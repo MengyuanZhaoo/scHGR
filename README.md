@@ -5,13 +5,21 @@ Abstract
 
 ## Requirements
 python==3.7
+
 dgl==0.4.3.post2
+
 matplotlib==3.5.1
+
 numpy==1.19.2
+
 pandas==1.3.5
+
 scikit_learn==1.2.2
+
 scipy==1.6.2
+
 torch==1.12.1
+
 tqdm==4.64.0
 
 ## Usage
