@@ -25,3 +25,30 @@ tqdm==4.64.0
 ## Usage
 ### Input
 All the original datasets can be downloaded ([PBMC-FACS](https://zenodo.org/record/3357167), [AMB](https://zenodo.org/record/3357167), [PBMC1-10X2](https://zenodo.org/record/3357167), [PBMC1-10X3](https://zenodo.org/record/3357167), [PBMC1-SM2](https://zenodo.org/record/3357167), [PBMC1-CS2](https://zenodo.org/record/3357167), [PBMC1-DS](https://zenodo.org/record/3357167), [PBMC1-D](https://zenodo.org/record/3357167), [PBMC1-SW](https://zenodo.org/record/3357167), [PBMC2-10X2](https://zenodo.org/record/3357167), [Human](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133), [Mouse](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133), [Diabetes mellitus](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133), [Human lung atlas](https://www.synapse.org/#!Synapse:syn21041850), [COVID-19 Mild](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145926) and [COVID-19 Severe](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145926)).
+
+
+For example, /datasets is equipped with the demo expression profiles and corresponding labels of PBMC1_10X2, PBMC1_10X3 and PBMC2_10X2 datasets. 
+
+```Bash
+cd scHGR
+python pre-process.py # generate gene_statistics.csv, regulations.txt and genenodes.npy
+python scHGR.py # train model and annotate query file
+```
+All output will be shown in /output. Performance will be shown at the bottom if the labels of query file are available. 
+```
+ |-- app
+        |-- app.js
+        |-- db.js
+        |-- directoryList.md
+        |-- index.html
+        |-- mddir.js
+        |-- routing.js
+        |-- server.js
+        |-- _api
+            |-- api.groups.js
+            |-- api.posts.js
+            |-- api.users.js
+            |-- api.widgets.js
+        |-- _components
+            |-- directives
+```
