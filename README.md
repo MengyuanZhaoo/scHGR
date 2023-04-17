@@ -61,6 +61,7 @@ python predict.py
 When using your own data, you have to provide
 * the expression profile of reference datasets and cell labels
 * the expression profile of query datasets
+
 An optional input is the cell labels of query dataset and if this is provided, scHGR will automatically calculate the confusion matrix and various statistical metrics after annotation.
 When using your own gene regulation data, you need to put them in the gene-regulatory-relation-repository folder and load them by pre-process.py.
 
