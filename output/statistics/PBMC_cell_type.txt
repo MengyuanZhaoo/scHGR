@@ -1,0 +1,9 @@
+B cell
+CD14+ monocyte
+CD16+ monocyte
+CD4+ T cell
+Cytotoxic T cell
+Dendritic cell
+Megakaryocyte
+Natural killer cell
+Plasmacytoid dendritic cell
