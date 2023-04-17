@@ -2,6 +2,7 @@
 An automated cell identity annotation tool, termed single-cell Hybrid graph neural network with Gene Regulations (scHGR)
 ## Overview
 Abstract
+![framework](https://user-images.githubusercontent.com/28176452/232417321-c4c0e4ee-f0e9-4fb7-a00e-7ab2dd4a702a.png)
 
 ## Requirements
 python==3.7
@@ -30,8 +31,8 @@ All the original datasets can be downloaded ([PBMC-FACS](https://zenodo.org/reco
 For example, /datasets is equipped with the demo expression profiles and corresponding labels of PBMC1_10X2, PBMC1_10X3 and PBMC2_10X2 datasets. 
 ```Bash
 cd scHGR
-python pre-process.py # generate gene_statistics.csv, regulations.txt and genenodes.npy
-python scHGR.py # train model and annotate query file
+python pre-process.py  # generate gene_statistics.csv, regulations.txt and genenodes.npy
+python scHGR.py        # train model and annotate query file
 ```
 All output will be shown in /output. Performance will be shown at the bottom if the labels of query file are available. The directory of the output files and the specific instructions are as follows:
 ```
@@ -60,7 +61,8 @@ python predict.py
 When using your own data, you have to provide
 * the expression profile of reference datasets and cell labels
 * the expression profile of query datasets
-
+An optional input is the cell labels of query dataset and if this is provided, scHGR will automatically calculate the confusion matrix and various statistical metrics after annotation.
+When using your own gene regulation data, you need to put them in the gene-regulatory-relation-repository folder and load them by pre-process.py.
 
 ### Output
 The output files with scHGR predicted labels will be stored in the output folder.
