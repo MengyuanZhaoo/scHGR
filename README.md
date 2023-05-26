@@ -1,7 +1,10 @@
 # scHGR
-An automated cell identity annotation tool, termed single-cell Hybrid graph neural network with Gene Regulations (scHGR)
+An automated cell identity annotation tool, termed single-cell Hybrid graph neural network with Genomic Relations (scHGR).
 ## Overview
-Abstract
+Single-cell transcriptome sequencing technologies allow us to deconvolve components of tissues or organs from single-cell resolution and deepen insight into cellular heterogeneity, reveal biodiversity as well as delineate molecular mechanisms. Assigning cell identities is a crucial step in processing single-cell RNA sequencing (scRNA-seq) data. Leveraging the continuously accumulated large-scale single-cell atlases as reference to annotate newly sequenced data is empowering for single-cell omics analysis. However, available tools typically rely on transcriptomic expression profiles, which are susceptible to technologies, platforms, and species, thus limiting their effectiveness in large-span annotation tasks.
+
+Here we present a single-cell Hybrid graph neural network with Genomic Relations (scHGR), which extracts cross-scenario discernible expression patterns by combining genomic relationships with transcriptomic expression patterns. A total of $22$ scenarios involving various tissues, platforms, species, as well as diseases indicate that, scHGR stands out in both accuracy and stability benchmarked with state-of-the-art cell annotation tools. Crucially, scHGR uncovers novel biologically significant subtypes while assigning marker genes to facilitate gene-associated downstream tasks. In addition, scHGR provides exhaustive annotation for COVID-19 data with $56$ cell populations, revealing vital factors reflecting pathogenesis and inspiring therapeutic solutions.
+
 ![framework](https://user-images.githubusercontent.com/28176452/232417321-c4c0e4ee-f0e9-4fb7-a00e-7ab2dd4a702a.png)
 
 ## Requirements
